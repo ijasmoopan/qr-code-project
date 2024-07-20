@@ -6,6 +6,7 @@ import fs from 'fs';
 const createQR = async (req, res) => {
   let toUserEmail = req.params.email;
   let fromUserEmail = process.env.EMAIL_FROM;
+  let url = process.env.URL;
 
   const createPdfFile = async () => {
     console.log('createPdfFile called');
@@ -58,7 +59,7 @@ const createQR = async (req, res) => {
     QRCode.toFile(
       'new-qr-code.png',
       // 'ijasmoopan.github.io/Portfolio',
-      `localhost:8080/qr/read/${toUserEmail}`,
+      `${url}/qr/read/${toUserEmail}`,
       {
         errorCorrectionLevel: 'H',
       },
