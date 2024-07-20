@@ -1,0 +1,41 @@
+{
+  "name": "qr-code-project",
+  "version": "1.0.0",
+  "description": "A trial project for qr-code",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --check '**/**/*.{js,jsx,ts,tsx,css}'",
+    "prettier:fix": "prettier --write '**/**/*.{js,jsx,ts,tsx,css}'"
+  },
+  "author": "Ijas Mohamad",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "express": "^4.19.2",
+    "jimp": "^0.22.12",
+    "nodemailer": "^6.9.14",
+    "pdfkit": "^0.15.0",
+    "qrcode": "^1.5.3",
+    "qrcode-reader": "^1.0.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/nodemailer": "^6.4.15",
+    "@types/pdfkit": "^0.13.4",
+    "@types/qrcode": "^1.5.5",
+    "eslint": "^9.7.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.8.0",
+    "prettier": "^3.3.3"
+  }
+}
